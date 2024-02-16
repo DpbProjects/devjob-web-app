@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 @layer components {
-    h1 {
-      @apply text-h1 font-bold text-dark-blue 
-    }
-  
-    h2 {
-      @apply text-h2 font-bold text-dark-blue 
-    }
-    h3 {
-      @apply text-h3 font-bold text-dark-blue 
-    }
-    h4 {
-      @apply text-h4 font-bold text-dark-blue 
-    }
-  
-    p {
-      @apply text-body text-dark-grey font-normal 
-    }
+  h1 {
+    @apply text-h1 font-bold text-dark-blue;
   }
+
+  h2 {
+    @apply text-h2 font-bold text-dark-blue;
+  }
+  h3 {
+    @apply text-h3 font-bold text-dark-blue;
+  }
+  h4 {
+    @apply text-h4 font-bold text-dark-blue;
+  }
+
+  p {
+    @apply text-body text-dark-grey font-normal;
+  }
+}
