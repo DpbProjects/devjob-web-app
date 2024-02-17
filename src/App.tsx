@@ -1,19 +1,9 @@
-import { useState } from "react";
-import JSONdata from "./data/data.json";
-
+import ThemeToggler from "./components/ui/ThemeToggler.tsx";
 function App() {
-  const [data, setData] = useState(JSONdata);
-
-  const handleFilter = () => {
-    const filtered = data.filter((item) => item.id === 2);
-
-    setData(filtered);
-  };
-
   return (
-    <main className=" text-violet font-bold">
-      <button onClick={handleFilter}>Filter</button>
-      <pre> {JSON.stringify(data, null, 2)}</pre>
+    <main className=" min-h-screen bg-off-white dark:bg-dark-blue">
+      <h1>Theme</h1>
+      <ThemeToggler />
     </main>
   );
 }
