@@ -1,9 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
@@ -11,13 +9,14 @@ export default {
       },
     },
     colors: {
-      violet: '#5964E0',
+      violet: "#5964E0",
       "light-violet": "#939BF4",
-      "dark-blue": '#19202D',
+      "dark-blue": "#19202D",
       midnight: "#121721",
       "light-grey": "#979797",
-      "gray": "#9DAEC2",
-      "dark-grey": "#6E8098"
+      "off-white": "#F4F6F8",
+      gray: "#9DAEC2",
+      "dark-grey": "#6E8098",
     },
     fontSize: {
       body: ["16px", { lineHeight: "26px", letterSpacing: "0" }],
@@ -28,4 +27,4 @@ export default {
     },
   },
   plugins: [],
-}
+};
