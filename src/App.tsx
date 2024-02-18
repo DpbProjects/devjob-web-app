@@ -1,20 +1,17 @@
-import { useState } from "react";
-import JSONdata from "./data/data.json";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// pages
+import IndexPage from "./pages";
+import JobsDetailsPage from "./pages/jobs-details";
 
 function App() {
-  const [data, setData] = useState(JSONdata);
-
-  const handleFilter = () => {
-    const filtered = data.filter((item) => item.id === 2);
-
-    setData(filtered);
-  };
-
   return (
-    <main className=" text-violet font-bold">
-      <button onClick={handleFilter}>Filter</button>
-      <pre> {JSON.stringify(data, null, 2)}</pre>
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<IndexPage />} />
+        <Route path="/job-detail" element={<JobsDetailsPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
