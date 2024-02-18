@@ -7,15 +7,21 @@ export default {
       fontFamily: {
         sans: ["Kumbh Sans", "sans-serif"],
       },
+      backgroundImage: {
+        "header-pattern-desktop":
+          "url('./src/assets/desktop/bg-pattern-header.svg')",
+        "header-pattern-mobile":
+          "url('./src/assets/mobile/bg-pattern-header.svg')",
+      },
     },
     colors: {
       violet: "#5964E0",
+      midnight: "#121721",
+      gray: "#9DAEC2",
       "light-violet": "#939BF4",
       "dark-blue": "#19202D",
-      midnight: "#121721",
       "light-grey": "#979797",
       "off-white": "#F4F6F8",
-      gray: "#9DAEC2",
       "dark-grey": "#6E8098",
     },
     fontSize: {
