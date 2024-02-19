@@ -60,7 +60,9 @@ export default function JobCard({
         <img src={logo} alt={company} />
       </div>
       <p>
-        {postedAt} . {contract}
+        <span className="mr-2">{postedAt}</span>
+        <span className="text-h1">&#x002E;</span>
+        <span className="ml-2">{contract}</span>
       </p>
       <h3 className="py-3 group-hover:text-dark-grey transition-colors duration-300">
         {position}
