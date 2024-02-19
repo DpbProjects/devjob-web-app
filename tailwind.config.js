@@ -15,6 +15,7 @@ export default {
       },
     },
     colors: {
+      // App colours
       violet: "#5964E0",
       midnight: "#121721",
       gray: "#9DAEC2",
@@ -23,6 +24,21 @@ export default {
       "light-grey": "#979797",
       "off-white": "#F4F6F8",
       "dark-grey": "#6E8098",
+      white: "#FFFFFF",
+
+      // logo background colours
+      scoot: "hsl(var(--color-scoot))",
+      blogr: "hsl(var(--color-blogr))",
+      vector: "hsl(var(--color-vector))",
+      office: "hsl(var(--color-office))",
+      pod: "hsl(var(--color-pod))",
+      creative: "hsl(var(--color-creative))",
+      pomodoro: "hsl(var(--color-pomodoro))",
+      maker: "hsl(var(--color-maker))",
+      coffee: "hsl(var(--color-coffee))",
+      mastercraft: "hsl(var(--color-mastercraft))",
+      crowdfund: "hsl(var(--color-crowdfund))",
+      typemaster: "hsl(var(--color-typemaster))",
     },
     fontSize: {
       body: ["16px", { lineHeight: "26px", letterSpacing: "0" }],
