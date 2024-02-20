@@ -22,7 +22,7 @@
 
 @layer components {
   h1 {
-    @apply text-h1 font-bold text-off-white;
+    @apply text-h1 font-bold;
   }
 
   h2 {
@@ -35,7 +35,7 @@
     @apply text-h4 font-bold text-dark-blue dark:text-white;
   }
 
-  p {
+  p, li {
     @apply text-body text-dark-grey font-normal;
   }
 }
