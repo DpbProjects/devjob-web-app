@@ -8,8 +8,8 @@ export default {
         sans: ["Kumbh Sans", "sans-serif"],
       },
       backgroundImage: {
-        "header-pattern-desktop": "url('/bg-pattern-header.svg')",
-        "header-pattern-mobile": "url('/bg-pattern-header.svg')",
+        "header-pattern-desktop": "url('/bg-pattern-header-desktop.svg')",
+        "header-pattern-mobile": "url('/bg-pattern-header-mobile.svg')",
       },
     },
     colors: {
