@@ -8,6 +8,7 @@ export default function JobList() {
       {data.map((item) => (
         <JobCard
           key={item.id}
+          id={item.id}
           position={item.position}
           company={item.company}
           postedAt={item.postedAt}

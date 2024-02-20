@@ -17,7 +17,7 @@ function App() {
           }
         >
           <Route path="/" element={<IndexPage />} />
-          <Route path="/job-detail" element={<JobsDetailsPage />} />
+          <Route path="/job-detail/:id" element={<JobsDetailsPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

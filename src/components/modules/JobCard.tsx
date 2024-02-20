@@ -1,5 +1,10 @@
+import { Link } from "react-router-dom";
+
+import { colourVariants } from "../../utils";
+import type { ColourVariant } from "../../types";
+
 type JobCardProps = {
-  key: number;
+  id: number;
   position: string;
   company: string;
   postedAt: string;
@@ -9,21 +14,8 @@ type JobCardProps = {
   logoBackground: string;
 };
 
-type ColourVariant =
-  | "scoot"
-  | "blogr"
-  | "vector"
-  | "office"
-  | "pod"
-  | "creative"
-  | "pomodoro"
-  | "maker"
-  | "coffee"
-  | "mastercraft"
-  | "crowdfund"
-  | "typemaster";
-
 export default function JobCard({
+  id,
   position,
   company,
   postedAt,
@@ -32,26 +24,11 @@ export default function JobCard({
   logo,
   logoBackground,
 }: JobCardProps) {
-  const colourVariants: Record<ColourVariant, string> = {
-    scoot: `bg-scoot`,
-    blogr: `bg-blogr`,
-    vector: `bg-vector`,
-    office: `bg-office`,
-    pod: `bg-pod`,
-    creative: `bg-creative`,
-    pomodoro: `bg-pomodoro`,
-    maker: `bg-maker`,
-    coffee: `bg-coffee`,
-    mastercraft: `bg-mastercraft`,
-    crowdfund: `bg-crowdfund`,
-    typemaster: `bg-typemaster`,
-  };
-
   const variantKey = logoBackground as ColourVariant;
 
   return (
-    <a
-      href="/"
+    <Link
+      to={`/job-detail/${id}`}
       className=" group relative bg-white dark:bg-dark-blue p-8 pt-12 hover:text-dark-grey"
     >
       <div
@@ -69,6 +46,6 @@ export default function JobCard({
       </h3>
       <p className="pb-11">{company}</p>
       <p className="text-violet">{location}</p>
-    </a>
+    </Link>
   );
 }
