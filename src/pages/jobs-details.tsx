@@ -19,7 +19,7 @@ export default function JobsDetailsPage() {
         {/* HEADER */}
         <div className="absolute top-[-44px] rounded-lg w-full flex flex-col sm:flex-row bg-white dark:bg-dark-blue">
           <div
-            className={`absolute sm:static top-[-25px] left-[143px] rounded-lg h-12 w-12 sm:rounded-s-lg  sm:min-h-36 sm:min-w-36 flex justify-center items-center ${colourVariants[variantKey]} `}
+            className={`absolute sm:static top-[-25px] left-[143px] rounded-lg min-h-12 min-w-12 sm:rounded-r-none sm:min-h-36 sm:min-w-36 flex justify-center items-center ${colourVariants[variantKey]} `}
           >
             <img className="sm:w-20" src={job?.logo} alt={job?.company} />
           </div>
