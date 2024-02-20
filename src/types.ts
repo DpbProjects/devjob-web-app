@@ -11,3 +11,5 @@ export type ColourVariant =
   | "mastercraft"
   | "crowdfund"
   | "typemaster";
+
+export type ButtonVariant = "primary" | "secondary";
