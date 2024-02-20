@@ -23,6 +23,10 @@ export default {
       "off-white": "#F4F6F8",
       "dark-grey": "#6E8098",
       white: "#FFFFFF",
+      "icy-blue-light": "#EEEFFC",
+      "icy-blue": "#C5C9F4",
+      "ash-grey": "#303642",
+      "ash-grey-light": "#696E76",
 
       // logo background colours
       scoot: "hsl(var(--color-scoot))",
