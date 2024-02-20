@@ -17,13 +17,13 @@ export default function JobsDetailsPage() {
     <main className="bg-off-white dark:bg-midnight relative">
       <div className="relative min-h-screen m-auto max-w-[327px] sm:max-w-[689px] lg:max-w-[730px] pt-36 mb-20">
         {/* HEADER */}
-        <div className="absolute top-[-44px] rounded-lg w-full flex flex-col sm:flex-row bg-white dark:bg-dark-blue">
+        <div className="flex flex-col sm:flex-row absolute top-[-44px] rounded-lg w-full  bg-white dark:bg-dark-blue">
           <div
-            className={`absolute sm:static top-[-25px] left-[143px] rounded-lg min-h-12 min-w-12 sm:rounded-r-none sm:min-h-36 sm:min-w-36 flex justify-center items-center ${colourVariants[variantKey]} `}
+            className={`flex justify-center items-center absolute sm:static top-[-25px] left-[143px] rounded-lg min-h-12 min-w-12 sm:rounded-r-none sm:min-h-36 sm:min-w-36  ${colourVariants[variantKey]} `}
           >
             <img className="sm:w-20" src={job?.logo} alt={job?.company} />
           </div>
-          <div className="flex justify-between w-full px-10 py-11">
+          <div className="flex flex-col text-center sm:text-left sm:flex-row justify-between w-full px-10 py-11">
             <div>
               <h2 className="mb-3">{job?.company}</h2>
               <p>{job?.website}</p>
@@ -34,16 +34,18 @@ export default function JobsDetailsPage() {
 
         {/* BODY */}
 
-        <div className="rounded-lg p-12 bg-white dark:bg-dark-blue text-wrap">
+        <div className="rounded-lg p-6 sm:p-12 bg-white dark:bg-dark-blue text-wrap">
           {/*Content: Header */}
-          <div className="flex justify-between mb-10">
+          <div className="flex flex-col sm:flex-row justify-between mb-10">
             <div>
               <p>
-                <span className="mr-2">{job.postedAt}</span>
+                <span className="mr-1 mr-2">{job.postedAt}</span>
                 <span className="text-h1">&#x002E;</span>
                 <span className="ml-2">{job.contract}</span>
               </p>
-              <h1 className="my-2 dark:text-white">{job.position}</h1>
+              <h1 className="my-2 dark:text-white text-h3 sm:text-h1">
+                {job.position}
+              </h1>
               <p className="text-violet">{job.location}</p>
             </div>
             <button>Click me</button>
